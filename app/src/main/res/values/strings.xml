@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">TaskUp</string>
+
+    <string-array name="roles_array">
+        <item>Cliente</item>
+        <item>Prestador</item>
+    </string-array>
+
+    <string-array name="tipos_servicio">
+        <item>Plomería</item>
+        <item>Electricidad</item>
+        <item>Limpieza</item>
+        <item>Jardineria</item>
+        <item>Entrega</item>
+        <item>Tutoria</item>
+    </string-array>
+</resources>
