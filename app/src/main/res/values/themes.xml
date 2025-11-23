@@ -1,9 +1,15 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.TaskUp" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+    <!-- Tema principal de TaskUp -->
+    <style name="Theme.TaskUp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Puedes personalizar colores aquí si quieres -->
+        <item name="colorPrimary">#00FFEA</item>
+        <item name="colorPrimaryVariant">#E36D00</item>
+        <item name="colorAccent">#FFA040</item>
+
+        <!-- Para evitar colores dinámicos raros -->
+        <item name="materialThemeOverlay">@null</item>
+        <item name="colorControlHighlight">@android:color/transparent</item>
     </style>
 
-    <style name="Theme.TaskUp" parent="Base.Theme.TaskUp" />
 </resources>

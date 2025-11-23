@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="110dp"
+    android:layout_height="120dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/category_item_bg"
+    android:padding="12dp"
+    android:layout_marginEnd="12dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground">
+
+    <ImageView
+        android:id="@+id/imgCategoria"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:src="@drawable/plomeria"
+        android:scaleType="fitCenter"/>
+
+    <TextView
+        android:id="@+id/tvCategoria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Categoría"
+        android:textColor="#333"
+        android:textStyle="bold"
+        android:layout_marginTop="6dp"/>
+
+</LinearLayout>

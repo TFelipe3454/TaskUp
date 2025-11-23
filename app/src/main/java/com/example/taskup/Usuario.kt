@@ -6,5 +6,6 @@ data class Usuario(
     val nombre: String,
     val profesion: String,
     val calificacion: Double,
-    val imagen: Int = R.drawable.usuario_default // drawable por defecto
-): Serializable
+    val descripcion: String,
+    val imagen: String   // ahora nombre del drawable
+) : Serializable

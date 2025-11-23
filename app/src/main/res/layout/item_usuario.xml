@@ -5,19 +5,19 @@
     android:padding="12dp"
     android:background="@drawable/item_background"
     android:layout_marginBottom="8dp"
-    android:elevation="2dp">
+    android:elevation="3dp">
 
-    <!-- Imagen del usuario -->
+    <!-- Foto del prestador -->
     <ImageView
         android:id="@+id/imgUsuario"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:scaleType="centerCrop"
         android:src="@drawable/usuario_default"
         android:background="@drawable/circle_shape"
-        android:padding="2dp" />
+        android:padding="3dp" />
 
-    <!-- Información del usuario -->
+    <!-- Contenido de texto -->
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -29,7 +29,7 @@
             android:id="@+id/tvNombre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Juan Pérez"
+            android:text="Nombre del Prestador"
             android:textSize="16sp"
             android:textStyle="bold"
             android:textColor="#000000" />
@@ -38,9 +38,19 @@
             android:id="@+id/tvEmpleo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Electricista"
+            android:text="Profesión"
             android:textSize="14sp"
-            android:textColor="#666666" />
+            android:textColor="#444444" />
+
+        <TextView
+            android:id="@+id/tvDescripcion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Descripción corta del profesional..."
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="13sp"
+            android:textColor="#777777"/>
 
         <TextView
             android:id="@+id/tvCalificacion"
@@ -49,6 +59,7 @@
             android:text="⭐ 4.8"
             android:textSize="14sp"
             android:textColor="#FFA000" />
+
     </LinearLayout>
 
     <!-- Botón Solicitar -->
@@ -57,9 +68,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Solicitar"
-        android:backgroundTint="#FF9800"
         android:textColor="#FFFFFF"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
+        android:backgroundTint="#FF9800"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
         android:layout_gravity="center_vertical"/>
 </LinearLayout>

@@ -1,0 +1,16 @@
+[
+  {
+    "nombre": "Juan Pérez",
+    "profesion": "Plomero",
+    "calificacion": 4.7,
+    "descripcion": "10 años de experiencia en instalaciones y reparaciones hidráulicas.",
+    "imagen": "plomero1"
+  },
+  {
+    "nombre": "María López",
+    "profesion": "Electricista",
+    "calificacion": 4.8,
+    "descripcion": "Certificada por el SENA en electricidad residencial.",
+    "imagen": "electricista1"
+  }
+]

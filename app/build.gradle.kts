@@ -47,13 +47,17 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation("org.osmdroid:osmdroid-android:6.1.16")
+    implementation("org.osmdroid:osmdroid-wms:6.1.16")
+    implementation("org.osmdroid:osmdroid-mapsforge:6.1.14")
+
+    // ⬇️ ESTA ES LA CORRECTA PARA QUE FUNCIONE OSRMRoadManager
+    implementation("com.github.MKergall:osmbonuspack:6.7.0")
+    implementation(libs.filament.android)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-
-    implementation("org.osmdroid:osmdroid-android:6.1.16")
-    implementation("org.osmdroid:osmdroid-mapsforge:6.1.14")
 }
 
 

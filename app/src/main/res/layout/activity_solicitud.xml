@@ -1,176 +1,188 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true"
-    android:background="@color/white"
-    tools:context=".SolicitudActivity">
+    android:background="#F4F4F4"
+    android:fillViewport="true">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="24dp">
+        android:padding="22dp"
+        android:orientation="vertical">
 
+        <!-- 🧾 TÍTULO -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Solicitud de servicio"
             android:textSize="22sp"
             android:textStyle="bold"
-            android:textColor="@color/black"
+            android:textColor="#000000"
             android:gravity="center"
-            android:layout_marginBottom="24dp" />
+            android:layout_marginBottom="20dp"/>
 
-        <!-- 🧰 Tipo de servicio -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Tipo de servicio"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:layout_marginBottom="6dp" />
-
-        <Spinner
-            android:id="@+id/spinnerTipoServicio"
+        <!-- 🪪 TARJETA CONTENEDORA -->
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:entries="@array/tipos_servicio"
-            android:background="@android:drawable/editbox_background"
-            android:spinnerMode="dropdown"
-            android:padding="8dp"
-            android:layout_marginBottom="16dp" />
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:padding="18dp"
+            android:elevation="4dp">
 
-        <!-- 📍 Ubicación -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Ubicación"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:layout_marginBottom="6dp" />
+            <!-- 🧰 Tipo de servicio -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tipo de servicio"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginBottom="6dp"
+                android:textColor="#333333"/>
 
-        <EditText
-            android:id="@+id/etUbicacion"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Ingresa tu dirección o ubicación"
-            android:inputType="textPostalAddress"
-            android:background="@drawable/edit_text_bg"
-            android:padding="12dp"
-            android:layout_marginBottom="16dp" />
+            <Spinner
+                android:id="@+id/spinnerTipoServicio"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingHorizontal="12dp"
+                android:background="@drawable/edit_text_bg"
+                android:spinnerMode="dropdown"
+                android:entries="@array/tipos_servicio"
+                android:layout_marginBottom="18dp"/>
 
-        <!-- 📅 Fecha -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Fecha"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:layout_marginBottom="6dp" />
+            <!-- 📍 Ubicación -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ubicación"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginBottom="6dp"
+                android:textColor="#333333"/>
 
-        <EditText
-            android:id="@+id/etFecha"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Selecciona la fecha"
-            android:focusable="false"
-            android:inputType="none"
-            android:background="@drawable/edit_text_bg"
-            android:padding="12dp"
-            android:layout_marginBottom="16dp" />
+            <EditText
+                android:id="@+id/etUbicacion"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edit_text_bg"
+                android:hint="Ingresa tu dirección"
+                android:padding="12dp"
+                android:layout_marginBottom="18dp"/>
 
-        <!-- ⏰ Hora -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hora"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:layout_marginBottom="6dp" />
+            <!-- 📅 Fecha -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fecha"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginBottom="6dp"
+                android:textColor="#333333"/>
 
-        <EditText
-            android:id="@+id/etHora"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Selecciona la hora"
-            android:focusable="false"
-            android:inputType="none"
-            android:background="@drawable/edit_text_bg"
-            android:padding="12dp"
-            android:layout_marginBottom="16dp" />
+            <EditText
+                android:id="@+id/etFecha"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Selecciona la fecha"
+                android:background="@drawable/edit_text_bg"
+                android:padding="12dp"
+                android:focusable="false"
+                android:layout_marginBottom="18dp"/>
 
-        <!-- 📝 Descripción -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Descripción del servicio"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:layout_marginBottom="6dp" />
+            <!-- ⏰ Hora -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hora"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginBottom="6dp"
+                android:textColor="#333333"/>
 
-        <EditText
-            android:id="@+id/etDescripcion"
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:hint="Describe brevemente lo que necesitas..."
-            android:gravity="top"
-            android:inputType="textMultiLine"
-            android:background="@drawable/edit_text_bg"
-            android:padding="12dp"
-            android:layout_marginBottom="16dp" />
+            <EditText
+                android:id="@+id/etHora"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Selecciona la hora"
+                android:background="@drawable/edit_text_bg"
+                android:padding="12dp"
+                android:focusable="false"
+                android:layout_marginBottom="18dp"/>
 
-        <!-- 💰 Precio -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Precio ofrecido"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:layout_marginBottom="6dp" />
+            <!-- 📝 Descripción -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Descripción del servicio"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginBottom="6dp"
+                android:textColor="#333333"/>
 
-        <EditText
-            android:id="@+id/etPrecio"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Ej: 50000"
-            android:inputType="number"
-            android:background="@drawable/edit_text_bg"
-            android:padding="12dp"
-            android:layout_marginBottom="16dp" />
+            <EditText
+                android:id="@+id/etDescripcion"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:hint="Describe lo que necesitas…"
+                android:gravity="top"
+                android:background="@drawable/edit_text_bg"
+                android:padding="12dp"
+                android:layout_marginBottom="18dp"/>
 
-        <!-- ☎️ Teléfono -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Teléfono de contacto"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:layout_marginBottom="6dp" />
+            <!-- 💰 Precio -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Precio ofrecido"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginBottom="6dp"
+                android:textColor="#333333"/>
 
-        <EditText
-            android:id="@+id/etTelefono"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Ej: 3001234567"
-            android:inputType="phone"
-            android:background="@drawable/edit_text_bg"
-            android:padding="12dp"
-            android:layout_marginBottom="24dp" />
+            <EditText
+                android:id="@+id/etPrecio"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Ej: 50000"
+                android:inputType="number"
+                android:background="@drawable/edit_text_bg"
+                android:padding="12dp"
+                android:layout_marginBottom="18dp"/>
 
-        <!-- 🚀 Botón enviar -->
-        <Button
-            android:id="@+id/btnEnviarSolicitud"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Enviar solicitud"
-            android:textStyle="bold"
-            android:backgroundTint="@color/teal_700"
-            android:textColor="@android:color/white"
-            android:padding="12dp" />
+            <!-- ☎️ Teléfono -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Teléfono de contacto"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginBottom="6dp"
+                android:textColor="#333333"/>
 
+            <EditText
+                android:id="@+id/etTelefono"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Ej: 3001234567"
+                android:inputType="phone"
+                android:background="@drawable/edit_text_bg"
+                android:padding="12dp"
+                android:layout_marginBottom="22dp"/>
+
+            <!-- 🚀 Botón -->
+            <Button
+                android:id="@+id/btnEnviarSolicitud"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Enviar solicitud"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:textColor="@color/white"
+                android:background="@drawable/boton_borde_negro"
+                android:elevation="3dp"/>
+        </LinearLayout>
     </LinearLayout>
 </ScrollView>
+
