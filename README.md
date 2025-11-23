@@ -9,8 +9,8 @@ MVP de la app TaskUp
 |------|--------|----------------|
 | | Daniel Díaz ||
 | <img width="650" height="650" alt="image" src="https://github.com/user-attachments/assets/8eb5e1da-fa85-4039-bf5f-4c2134fc6fc3" />. | Tomas Felipe Guerra Hernández | Desarrollador con conocimientos en varios lenguajes y apacionado por aprender. |
-|  | Natalia Ramírez |  |
-|  | Juan Ordóñez |  |
+|  | Natalia Ramírez | Trabajo en equipo y comunicacion efectiva Creatividad e innivacion Compromiso y responsabilidad Experiencia en coordinación de equipos |
+|  <img width="1200" height="1600" alt="image" src="https://github.com/user-attachments/assets/f03e9d28-ff8c-48dc-9c14-4c0acca694ea" /> | Juan Ordóñez |  |
 
 
 ---
